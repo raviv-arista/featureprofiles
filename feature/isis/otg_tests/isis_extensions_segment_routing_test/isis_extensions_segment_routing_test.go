@@ -797,7 +797,7 @@ func VerifyISISSRSIDCounters(t *testing.T, dut *ondatra.DUTDevice, mplsLabel oc.
 		t.Log(outpcktstats)
 
 		if outpcktstats == 0 {
-			t.Errorf("Unable to find input/output matched packets related to MPLS label")
+			t.Errorf("Unable to find output matched packets related to MPLS label")
 		}
 	}
 }
